@@ -36,7 +36,7 @@ node('docker-slave'){
                 
               withDockerRegistry([credentialsId: '5526303b-ca3a-4c19-8051-1c23b8cba806', url: 'https://index.docker.io/v1/']) {
                 sh """
-
+                    cd openshift-ansible-openshift-ansible-${VERSION}/
                    ./hack/push-release.sh
 
                 """
