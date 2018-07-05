@@ -3,7 +3,7 @@ node('docker-slave'){
     properties([
       parameters(
         [
-            string(defaultValue: '3.9.30-1', description: 'origin version', name: 'VERSION'),
+            string(defaultValue: '3.9.32-1', description: 'origin version', name: 'VERSION'),
             string(defaultValue: 'talitabp/origin-ansible', description: 'openshift-ansible version', name: 'PREFIX'),
             string(defaultValue: 'v3.9', description: 'openshift-ansible version', name: 'OS_TAG'),
             string(defaultValue: 'v3.9', description: 'openshift-ansible version', name: 'OS_PUSH_TAG'),
